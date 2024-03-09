@@ -22,6 +22,7 @@ public class ProductService {
   }
 
   // Get by Id
+
   public Product findByProductId(Integer productId) {
     Optional<Product> productOptional = productRepository.findById(productId);
     return productOptional.get();
